@@ -33,7 +33,12 @@ a {
   opacity: 0.9;
   cursor: pointer;
 }
-
+/* .line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(xuongdong, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+} */
 .main-content {
   width: 1170px;
   max-width: calc(100% - 48px);
@@ -300,6 +305,7 @@ a {
   gap: 30px;
 }
 .popular .course-item {
+  flex: 1;
   border-radius: 12px;
   border: 1px solid #e2dfda;
   background: #fff;
@@ -374,4 +380,65 @@ a {
 }
 .popular .infor .foot .btn2:hover {
   background-color: var(--primary-color);
+}
+
+/* ==========feedbaack ======== */
+.feedback {
+  margin-top: 140px;
+  padding: 96px 0;
+  background: #2e2100;
+}
+.feedback-items {
+  display: flex;
+}
+.feedback-items .avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.feedback-items .infor .desc-nhanvat {
+  margin-bottom: 4px;
+  margin-top: 18px;
+  color: #f7f7f7;
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.42; /* 141.667% */
+}
+.feedback-items .infor .desc {
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  line-height: 1.86; /* 185.714% */
+}
+.feedback-items .infor .dots {
+  gap: 6px;
+  margin-top: 28px;
+  display: flex;
+}
+.feedback-items .infor .dots .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #634700;
+  cursor: pointer;
+  /* margin-right: 6px; */
+}
+.feedback-items .infor .dots .dot.ative {
+  background: var(--primary-color);
+}
+.feedback-items .content {
+  width: 66%;
+  margin-left: auto;
+  /* position: relative; */
+}
+.feedback-items blockquote {
+  /* position: absolute;
+  right: 30px;
+  bottom: 28px; */
+  color: #fff;
+  font-size: 2.6rem;
+  font-style: italic;
+  line-height: 1.54; /* 153.846% */
 }
