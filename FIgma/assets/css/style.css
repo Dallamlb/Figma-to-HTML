@@ -612,3 +612,74 @@ a {
   background-color: var(--primary-color);
   cursor: default;
 }
+
+/* ================footer============== */
+.footer {
+  padding: 96px 135px 0;
+  background: #2e2100;
+}
+.footer .row {
+  display: flex;
+  border-bottom: 1px solid #59554b;
+  padding-bottom: 38px;
+}
+.footer .row .colum {
+  width: 21.6%;
+}
+.footer .row .colum:first-child {
+  width: 35%;
+}
+.footer .row .colum .desc {
+  margin-top: 18px;
+  max-width: 267px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  line-height: 1.86; /* 185.714% */
+}
+.footer .row .colum .social {
+  display: flex;
+  margin-top: 18px;
+  gap: 18px;
+}
+.footer .row .colum .title {
+  display: inline-block;
+  padding: 0 48px 14px 0;
+  border-bottom: 1px solid #59554b;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75; /* 175% */
+}
+/* .footer .row .colum .title::after {
+  content: "";
+  display: inline-block;
+  width: 130px;
+  height: 1px;
+  background: #59554b;
+} */
+.footer .row .colum .list {
+  margin-top: 28px;
+}
+.footer .row .colum .list a {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  line-height: 1.86; /* 185.714% */
+}
+.footer .row .colum .list li:last-child a {
+  margin-bottom: 0;
+}
+.footer .row .colum .list strong {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.86; /* 185.714% */
+}
+.footer .copywrite {
+  padding: 28px 0;
+  color: #807d74;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.86; /* 185.714% */
+}
